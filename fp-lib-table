@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name OpenVideoModulator)(type KiCad)(uri ${KIPRJMOD}/OpenVideoModulator.pretty)(options "")(descr ""))
+)

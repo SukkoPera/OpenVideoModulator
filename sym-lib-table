@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AD724)(type Legacy)(uri ${KIPRJMOD}/lib/AD724.lib)(options "")(descr ""))
+  (lib (name s-video+composite_combo)(type Legacy)(uri ${KIPRJMOD}/lib/s-video+composite_combo.lib)(options "")(descr ""))
+)
