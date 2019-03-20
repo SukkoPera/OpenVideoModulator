@@ -6,12 +6,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenVideoModulator"
-Date "2019-03-16"
+Date "2019-03-21"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Inspired from CPC Wiki"
 Comment2 "http://www.cpcwiki.eu/index.php/RGB_SVideo"
-Comment3 ""
+Comment3 "Licensed under CERN OHL v.1.2"
 Comment4 ""
 $EndDescr
 $Comp
@@ -27,8 +27,6 @@ F 3 "DOCUMENTATION" H 5825 3395 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6575 3345 6710 3345
-Wire Wire Line
-	4910 4320 4910 4125
 Wire Wire Line
 	4910 3145 5075 3145
 $Comp
@@ -158,29 +156,20 @@ Wire Wire Line
 Wire Wire Line
 	5075 3345 4820 3345
 Wire Wire Line
-	4820 3345 4820 2475
-Wire Wire Line
-	6710 2475 6710 3145
+	6710 2365 6710 2475
 Wire Wire Line
 	6710 3245 6575 3245
-Wire Wire Line
-	4820 2475 5010 2475
 $Comp
 L power:VCC #PWR07
 U 1 1 5C8D331E
-P 5825 2365
-F 0 "#PWR07" H 5825 2215 50  0001 C CNN
-F 1 "VCC" H 5842 2538 50  0000 C CNN
-F 2 "" H 5825 2365 50  0001 C CNN
-F 3 "" H 5825 2365 50  0001 C CNN
-	1    5825 2365
+P 6710 2365
+F 0 "#PWR07" H 6710 2215 50  0001 C CNN
+F 1 "VCC" H 6727 2538 50  0000 C CNN
+F 2 "" H 6710 2365 50  0001 C CNN
+F 3 "" H 6710 2365 50  0001 C CNN
+	1    6710 2365
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5825 2365 5825 2475
-Connection ~ 5825 2475
-Wire Wire Line
-	5825 2475 6710 2475
 $Comp
 L Device:R R4
 U 1 1 5C8D41C8
@@ -265,12 +254,11 @@ U 1 1 5C8EAD24
 P 4540 2895
 F 0 "JP1" V 4540 2955 50  0000 L CNN
 F 1 "NTSC/~PAL" V 4480 3140 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4540 2895 50  0001 C CNN
+F 2 "OpenVideoModulator:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 4540 2895 50  0001 C CNN
 F 3 "~" H 4540 2895 50  0001 C CNN
 	1    4540 2895
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4820 2475
 Text Notes 4345 3065 0    50   ~ 0
 PAL
 Text Notes 4285 2800 0    50   ~ 0
@@ -281,7 +269,7 @@ U 1 1 5C8EE78F
 P 3060 3795
 F 0 "Y1" V 3190 3720 50  0000 C CNN
 F 1 "4.433619M" H 3060 3635 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 3060 3795 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3060 3795 50  0001 C CNN
 F 3 "~" H 3060 3795 50  0001 C CNN
 	1    3060 3795
 	0    -1   -1   0   
@@ -312,8 +300,6 @@ Wire Wire Line
 Wire Wire Line
 	4540 2645 4540 2475
 Wire Wire Line
-	4540 2475 4820 2475
-Wire Wire Line
 	2925 4225 2925 4165
 Connection ~ 2925 4165
 Wire Wire Line
@@ -333,9 +319,6 @@ Wire Wire Line
 	5075 3445 5010 3445
 Wire Wire Line
 	5010 3445 5010 2475
-Connection ~ 5010 2475
-Wire Wire Line
-	5010 2475 5825 2475
 Wire Wire Line
 	6575 3145 6710 3145
 Connection ~ 6710 3145
@@ -346,8 +329,6 @@ Wire Wire Line
 Wire Wire Line
 	6575 3445 6710 3445
 Connection ~ 6710 3445
-Wire Wire Line
-	6710 3445 6710 4125
 Wire Wire Line
 	6575 3045 7105 3045
 Text Label 6835 3045 0    50   ~ 0
@@ -462,14 +443,6 @@ F 3 "" H 2925 4225 50  0001 C CNN
 	1    2925 4225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4910 4125 5825 4125
-Connection ~ 4910 4125
-Wire Wire Line
-	4910 4125 4910 3145
-Connection ~ 6710 4125
-Wire Wire Line
-	6710 4125 6710 4335
 $Comp
 L power:VAA #PWR09
 U 1 1 5C9695BC
@@ -492,22 +465,6 @@ F 3 "" H 5420 6750 50  0001 C CNN
 	1    5420 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5C9698B4
-P 5825 4690
-F 0 "#PWR08" H 5825 4440 50  0001 C CNN
-F 1 "GND" H 5830 4517 50  0000 C CNN
-F 2 "" H 5825 4690 50  0001 C CNN
-F 3 "" H 5825 4690 50  0001 C CNN
-	1    5825 4690
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5825 4690 5825 4125
-Connection ~ 5825 4125
-Wire Wire Line
-	5825 4125 6710 4125
 $Comp
 L power:GND #PWR014
 U 1 1 5C96BBC7
@@ -541,23 +498,10 @@ F 3 "~" H 10435 935 50  0001 C CNN
 	1    10435 935 
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5C96BD29
-P 10060 935
-F 0 "#FLG01" H 10060 1010 50  0001 C CNN
-F 1 "PWR_FLAG" H 10060 1108 50  0000 C CNN
-F 2 "" H 10060 935 50  0001 C CNN
-F 3 "~" H 10060 935 50  0001 C CNN
-	1    10060 935 
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10825 840  10825 935 
 Wire Wire Line
 	10435 835  10435 935 
-Wire Wire Line
-	10060 840  10060 935 
 $Comp
 L power:GNDA #PWR010
 U 1 1 5C974E60
@@ -586,7 +530,7 @@ U 1 1 5C974FD6
 P 5950 7015
 F 0 "C6" H 6020 7115 50  0000 C CNN
 F 1 "100u" V 6000 6840 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5950 7015 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.8" H 5950 7015 50  0001 C CNN
 F 3 "~" H 5950 7015 50  0001 C CNN
 	1    5950 7015
 	1    0    0    -1  
@@ -597,7 +541,7 @@ U 1 1 5C97776E
 P 6250 7015
 F 0 "C7" H 6175 6915 50  0000 C CNN
 F 1 "100n" V 6190 7180 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 6865 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6288 6865 50  0001 C CNN
 F 3 "~" H 6250 7015 50  0001 C CNN
 	1    6250 7015
 	-1   0    0    1   
@@ -656,23 +600,23 @@ NoConn ~ 6695 7455
 $Comp
 L power:VCC #PWR0101
 U 1 1 5C99C960
-P 10060 840
-F 0 "#PWR0101" H 10060 690 50  0001 C CNN
-F 1 "VCC" H 10077 1013 50  0000 C CNN
-F 2 "" H 10060 840 50  0001 C CNN
-F 3 "" H 10060 840 50  0001 C CNN
-	1    10060 840 
+P 1020 6735
+F 0 "#PWR0101" H 1020 6585 50  0001 C CNN
+F 1 "VCC" H 1037 6908 50  0000 C CNN
+F 2 "" H 1020 6735 50  0001 C CNN
+F 3 "" H 1020 6735 50  0001 C CNN
+	1    1020 6735
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VAA #PWR0102
 U 1 1 5C99CBD3
-P 10435 835
-F 0 "#PWR0102" H 10435 685 50  0001 C CNN
-F 1 "VAA" H 10452 1008 50  0000 C CNN
-F 2 "" H 10435 835 50  0001 C CNN
-F 3 "" H 10435 835 50  0001 C CNN
-	1    10435 835 
+P 1395 6730
+F 0 "#PWR0102" H 1395 6580 50  0001 C CNN
+F 1 "VAA" H 1412 6903 50  0000 C CNN
+F 2 "" H 1395 6730 50  0001 C CNN
+F 3 "" H 1395 6730 50  0001 C CNN
+	1    1395 6730
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -764,6 +708,92 @@ F 1 "S-Video+Composite_Combo" H 8859 3320 50  0001 L CNN
 F 2 "OpenVideoModulator:AV-MDC-401" H 8760 3285 50  0001 C CNN
 F 3 "" H 8760 3285 50  0001 C CNN
 	2    8760 3435
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VAA #PWR0103
+U 1 1 5C973F8B
+P 4820 2365
+F 0 "#PWR0103" H 4820 2215 50  0001 C CNN
+F 1 "VAA" H 4837 2538 50  0000 C CNN
+F 2 "" H 4820 2365 50  0001 C CNN
+F 3 "" H 4820 2365 50  0001 C CNN
+	1    4820 2365
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5010 2475 6710 2475
+Connection ~ 6710 2475
+Wire Wire Line
+	6710 2475 6710 3145
+Wire Wire Line
+	4820 2365 4820 3345
+Wire Wire Line
+	4540 2475 5010 2475
+Connection ~ 5010 2475
+Wire Wire Line
+	1020 6735 1020 6830
+Wire Wire Line
+	1020 6830 1395 6830
+Wire Wire Line
+	1395 6830 1395 6730
+Wire Wire Line
+	880  7200 880  7005
+$Comp
+L power:GNDA #PWR0104
+U 1 1 5C992824
+P 880 7200
+F 0 "#PWR0104" H 880 6950 50  0001 C CNN
+F 1 "GNDA" H 885 7027 50  0000 C CNN
+F 2 "" H 880 7200 50  0001 C CNN
+F 3 "" H 880 7200 50  0001 C CNN
+	1    880  7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0105
+U 1 1 5C99282A
+P 1515 7215
+F 0 "#PWR0105" H 1515 6965 50  0001 C CNN
+F 1 "GNDD" H 1519 7060 50  0000 C CNN
+F 2 "" H 1515 7215 50  0001 C CNN
+F 3 "" H 1515 7215 50  0001 C CNN
+	1    1515 7215
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	880  7005 1205 7005
+Wire Wire Line
+	1515 7005 1515 7215
+$Comp
+L power:GND #PWR0106
+U 1 1 5C992835
+P 1205 7395
+F 0 "#PWR0106" H 1205 7145 50  0001 C CNN
+F 1 "GND" H 1210 7222 50  0000 C CNN
+F 2 "" H 1205 7395 50  0001 C CNN
+F 3 "" H 1205 7395 50  0001 C CNN
+	1    1205 7395
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1205 7395 1205 7005
+Connection ~ 1205 7005
+Wire Wire Line
+	1205 7005 1515 7005
+Wire Wire Line
+	4910 3145 4910 4320
+Wire Wire Line
+	6710 3445 6710 4335
+$Comp
+L power:VCC #PWR0107
+U 1 1 5C9C2114
+P 10435 835
+F 0 "#PWR0107" H 10435 685 50  0001 C CNN
+F 1 "VCC" H 10452 1008 50  0000 C CNN
+F 2 "" H 10435 835 50  0001 C CNN
+F 3 "" H 10435 835 50  0001 C CNN
+	1    10435 835 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
