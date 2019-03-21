@@ -242,7 +242,7 @@ ENDDEF
 #
 # s-video+composite_combo_S-Video+Composite_Combo
 #
-DEF s-video+composite_combo_S-Video+Composite_Combo J 0 40 Y Y 2 L N
+DEF s-video+composite_combo_S-Video+Composite_Combo J 0 40 Y Y 3 L N
 F0 "J" 0 200 50 H V C CNN
 F1 "s-video+composite_combo_S-Video+Composite_Combo" 50 -450 50 H V C CNN
 F2 "" 0 -150 50 H I C CNN
@@ -274,6 +274,7 @@ X ~ 3 300 50 100 L 50 50 1 1 P
 X ~ 4 -300 50 100 R 50 50 1 1 P
 X ~ 5 0 -200 100 U 50 50 2 1 P
 X ~ 6 -200 0 100 R 50 50 2 1 P
+X GND 7 0 0 100 R 50 50 3 1 P
 ENDDRAW
 ENDDEF
 #

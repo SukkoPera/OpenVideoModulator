@@ -687,7 +687,7 @@ Wire Wire Line
 Wire Wire Line
 	7025 3435 7260 3435
 Wire Wire Line
-	8760 3710 8760 3635
+	8760 3710 8760 3670
 $Comp
 L s-video+composite_combo:S-Video+Composite_Combo J2
 U 1 1 5C95E2F1
@@ -796,4 +796,20 @@ F 3 "" H 10435 835 50  0001 C CNN
 	1    10435 835 
 	1    0    0    -1  
 $EndComp
+$Comp
+L s-video+composite_combo:S-Video+Composite_Combo J2
+U 3 1 5CA00AEA
+P 8905 3670
+F 0 "J2" H 8955 3780 50  0000 C CNN
+F 1 "S-Video+Composite_Combo" H 9044 3804 50  0001 C CNN
+F 2 "" H 8905 3520 50  0001 C CNN
+F 3 "" H 8905 3520 50  0001 C CNN
+	3    8905 3670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8905 3670 8760 3670
+Connection ~ 8760 3670
+Wire Wire Line
+	8760 3670 8760 3635
 $EndSCHEMATC
