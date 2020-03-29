@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:OpenVideoModulator-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenVideoModulator"
-Date "2019-03-21"
-Rev "1git"
+Date "2020-03-29"
+Rev "1"
 Comp "SukkoPera"
 Comment1 "Inspired from CPC Wiki"
 Comment2 "http://www.cpcwiki.eu/index.php/RGB_SVideo"
@@ -171,28 +170,6 @@ F 3 "" H 6710 2365 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5C8D41C8
-P 7945 3435
-F 0 "R4" V 7895 3550 50  0000 L CNN
-F 1 "75" V 7945 3385 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7875 3435 50  0001 C CNN
-F 3 "~" H 7945 3435 50  0001 C CNN
-	1    7945 3435
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5C8D43C7
-P 7945 3955
-F 0 "R5" V 7895 4075 50  0000 L CNN
-F 1 "75" V 7945 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7875 3955 50  0001 C CNN
-F 3 "~" H 7945 3955 50  0001 C CNN
-	1    7945 3955
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 5C8D44B9
 P 7945 4165
@@ -342,28 +319,6 @@ F 1 "220u" V 7460 3990 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7410 4165 50  0001 C CNN
 F 3 "~" H 7410 4165 50  0001 C CNN
 	1    7410 4165
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1 C9
-U 1 1 5C9512E4
-P 7410 3955
-F 0 "C9" V 7460 4085 50  0000 C CNN
-F 1 "220u" V 7460 3780 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7410 3955 50  0001 C CNN
-F 3 "~" H 7410 3955 50  0001 C CNN
-	1    7410 3955
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1 C8
-U 1 1 5C95347F
-P 7410 3435
-F 0 "C8" V 7460 3565 50  0000 C CNN
-F 1 "220u" V 7460 3260 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7410 3435 50  0001 C CNN
-F 3 "~" H 7410 3435 50  0001 C CNN
-	1    7410 3435
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -812,4 +767,48 @@ Wire Wire Line
 Connection ~ 8760 3670
 Wire Wire Line
 	8760 3670 8760 3635
+$Comp
+L Device:R R5
+U 1 1 5C8D43C7
+P 7945 3955
+F 0 "R5" V 7895 4075 50  0000 L CNN
+F 1 "75" V 7945 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7875 3955 50  0001 C CNN
+F 3 "~" H 7945 3955 50  0001 C CNN
+	1    7945 3955
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C8D41C8
+P 7945 3435
+F 0 "R4" V 7895 3550 50  0000 L CNN
+F 1 "75" V 7945 3385 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7875 3435 50  0001 C CNN
+F 3 "~" H 7945 3435 50  0001 C CNN
+	1    7945 3435
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C9
+U 1 1 5C9512E4
+P 7410 3955
+F 0 "C9" V 7460 4085 50  0000 C CNN
+F 1 "220u" V 7460 3780 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7410 3955 50  0001 C CNN
+F 3 "~" H 7410 3955 50  0001 C CNN
+	1    7410 3955
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C8
+U 1 1 5C95347F
+P 7410 3435
+F 0 "C8" V 7460 3565 50  0000 C CNN
+F 1 "220u" V 7460 3260 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7410 3435 50  0001 C CNN
+F 3 "~" H 7410 3435 50  0001 C CNN
+	1    7410 3435
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
