@@ -1,7 +1,7 @@
 # OpenVideoModulator
 OpenVideoModulator is an Open Hardware adapter that converts an RGB video signal to Composite and S-Video.
 
-![Board](https://raw.githubusercontent.com/SukkoPera/OpenVideoModulator/master/doc/render-top.png)
+![Board](https://raw.githubusercontent.com/SukkoPera/OpenVideoModulator/master/img/render-top.png)
 
 ## Summary
 OpenVideoModulator is an Open Hardware implementation of [a small circuit found on the Amstrad CPC Wiki](http://www.cpcwiki.eu/index.php/RGB_SVideo) that is able to produce a composite video signal from separate red, green and blue color component signals (plus sync). Since it uses the AD724 encoder, it is also able to produce an S-Video (Y/C) signal and it supports both the PAL and NTSC standards.
