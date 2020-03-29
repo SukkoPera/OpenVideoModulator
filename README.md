@@ -13,7 +13,7 @@ First of all you need to choose whether you want PAL or NTSC output. The board i
 
 Solder the AD724 chip first, then all surface-mount components. Finally complete the board with the through-hole connectors and crystal.
 
-One of C6 and C7 should be enough. I put a 100nF on C6 but that is probably overkill. Play with them if your output video signal is unstable.
+One of C6 and C7 should be enough. I use a 100uF on C6 but that is probably overkill. Play with them if your output video signal is unstable.
 
 The Composite/S-Video connector can be found from many Chinese sellers under the name *AV-MDC-401*. I chose this one as it was perfect for my needs, but the board should be easy to adapt to different connectors.
 
