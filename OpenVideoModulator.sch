@@ -732,16 +732,16 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR013
 U 1 1 5C9614D8
-P 9365 4780
-F 0 "#PWR013" H 9365 4530 50  0001 C CNN
-F 1 "GNDA" H 9370 4607 50  0000 C CNN
-F 2 "" H 9365 4780 50  0001 C CNN
-F 3 "" H 9365 4780 50  0001 C CNN
-	1    9365 4780
+P 9365 4870
+F 0 "#PWR013" H 9365 4620 50  0001 C CNN
+F 1 "GNDA" H 9370 4697 50  0000 C CNN
+F 2 "" H 9365 4870 50  0001 C CNN
+F 3 "" H 9365 4870 50  0001 C CNN
+	1    9365 4870
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9365 4695 9365 4780
+	9365 4785 9365 4870
 Text Label 7025 3435 0    50   ~ 0
 composite
 Text Label 7025 4290 0    50   ~ 0
@@ -817,17 +817,6 @@ F 3 "~" H 10900 6860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Mini-DIN-4 J3
-U 1 1 5E91202A
-P 9365 4390
-F 0 "J3" H 9365 4875 50  0000 C CNN
-F 1 "SVIDEO_OUT" H 9365 4775 50  0000 C CNN
-F 2 "OpenVideoModulator:MiniDIN4" H 9365 4390 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 9365 4390 50  0001 C CNN
-	1    9365 4390
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5E917D59
 P 9145 3435
@@ -849,14 +838,27 @@ Wire Wire Line
 Wire Wire Line
 	9065 4390 8940 4390
 Wire Wire Line
-	8940 4390 8940 4695
+	8940 4390 8940 4785
 Wire Wire Line
-	8940 4695 9365 4695
+	8940 4785 9365 4785
 Wire Wire Line
-	9785 4695 9785 4390
+	9785 4785 9785 4390
 Wire Wire Line
 	9785 4390 9665 4390
-Connection ~ 9365 4695
+Connection ~ 9365 4785
 Wire Wire Line
-	9365 4695 9785 4695
+	9365 4785 9785 4785
+$Comp
+L MiniDIN4WithShield:Mini-DIN-4 J3
+U 1 1 5E87F227
+P 9365 4390
+F 0 "J3" H 9365 4870 50  0000 C CNN
+F 1 "SVIDEO_OUT" H 9365 4785 50  0000 C CNN
+F 2 "OpenVideoModulator:MiniDIN4" H 9365 4390 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 9365 4390 50  0001 C CNN
+	1    9365 4390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9365 4690 9365 4785
 $EndSCHEMATC
