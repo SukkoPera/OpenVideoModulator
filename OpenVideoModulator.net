@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/OpenVideoModulator/OpenVideoModulator.sch)
-    (date "lun 30 mar 2020, 11:50:01")
+    (date "lun 30 mar 2020, 19:27:09")
     (tool "Eeschema 5.1.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -127,7 +127,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5C95347F))
     (comp (ref J2)
-      (value VIDEOCOMP_OUT)
+      (value COMPVIDEO_OUT)
       (footprint OpenVideoModulator:SWITCHCRAFT_PJRAN1X1U01X)
       (datasheet A)
       (fields
