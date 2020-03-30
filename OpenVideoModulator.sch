@@ -822,7 +822,7 @@ U 1 1 5E91202A
 P 9365 4390
 F 0 "J3" H 9365 4875 50  0000 C CNN
 F 1 "SVIDEO_OUT" H 9365 4775 50  0000 C CNN
-F 2 "" H 9365 4390 50  0001 C CNN
+F 2 "OpenVideoModulator:MiniDIN4" H 9365 4390 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 9365 4390 50  0001 C CNN
 	1    9365 4390
 	1    0    0    -1  
@@ -833,7 +833,7 @@ U 1 1 5E917D59
 P 9145 3435
 F 0 "J2" H 9117 3409 50  0000 R CNN
 F 1 "COMPVIDEO_OUT" H 9117 3318 50  0000 R CNN
-F 2 "" H 9145 3435 50  0001 C CNN
+F 2 "OpenVideoModulator:Pin_Header_Straight_1x02-ModSilkS" H 9145 3435 50  0001 C CNN
 F 3 "~" H 9145 3435 50  0001 C CNN
 	1    9145 3435
 	-1   0    0    -1  
